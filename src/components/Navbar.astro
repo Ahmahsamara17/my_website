@@ -1,13 +1,7 @@
----
-const base = import.meta.env.BASE_URL.endsWith("/")
-  ? import.meta.env.BASE_URL
-  : `${import.meta.env.BASE_URL}/`;
-const link = (path = "") => `${base}${path}`;
----
 <nav class="site-nav" aria-label="Primary navigation">
   <ul class="nav-links">
-    <li><a href={link()} class="nav-link">Home</a></li>
-    <li><a href={link("writeups/")} class="nav-link">Writeups</a></li>
-    <li><a href={link("contact/")} class="nav-link">Contact</a></li>
+    <li><a href="./" class="nav-link">Home</a></li>
+    <li><a href="writeups/" class="nav-link">Writeups</a></li>
+    <li><a href="contact/" class="nav-link">Contact</a></li>
   </ul>
 </nav>
